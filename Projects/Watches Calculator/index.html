@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حاسبة الساعات</title>
+    <link rel="shortcut icon" href="logo.svg">
+    <link rel="stylesheet" href="CSS/index.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="website-header">
+        <div class="title">حاسبة الساعات</div>
+        <div class="description">هذا هو المكان الذي تستطيع فيه أن تجري العمليات الرياضية على الوقت وترى النتيجة</div>
+      </div>
+      <div class="navbar">
+        <div class="calc-by">تريد الحساب بـ:</div>
+        <ul class="calc-options">
+          <li class="option" data-option="seconds">ثواني</li>
+          <li class="option" data-option="minutes">دقائق</li>
+          <li class="option" data-option="hours">ساعات</li>
+          <li class="option select" data-option="days">أيام</li>
+          <li class="option" data-option="weeks">أسابيع</li>
+          <li class="option" data-option="months">شهور</li>
+          <li class="option" data-option="years">سنوات</li>
+          <li class="option" data-option="decades">عقود</li>
+          <li class="option" data-option="centuries">قرون</li>
+          <li class="option" data-option="millenniums">ألفيات</li>
+        </ul>
+
+        <div class="calc-mobile-options">
+          <div class="to-prev">&langle;</div>
+          <div class="current">
+            <div class="selected">
+              <div class="option" data-option="seconds">ثواني</div>
+              <div class="option" data-option="minutes">دقائق</div>
+              <div class="option" data-option="hours">ساعات</div>
+              <div class="option select" data-option="days">أيام</div>
+              <div class="option" data-option="weeks">أسابيع</div>
+              <div class="option" data-option="months">شهور</div>
+              <div class="option" data-option="years">سنوات</div>
+              <div class="option" data-option="decades">عقود</div>
+              <div class="option" data-option="centuries">قرون</div>
+              <div class="option" data-option="millenniums">ألفيات</div>
+            </div>
+          </div>
+          <div class="to-next">&rangle;</div>
+        </div>
+      </div>
+    </header>
+    <section class="calc">
+      <p class="nothing">لا يوجد شيء، أضف معادلة</p>
+
+      <div class="buttons">
+        <div class="add-watch">أضف ساعة</div>
+        <div class="add-collection">أضف ساعات بين قوسين ()</div>
+        <div class="reset">تفريغ المكان</div>
+        <div class="calculating">حساب النتائج</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-box">
+        <div class="ar">اللغة العربية</div>
+        <div class="en">اللغة الإنجليزية</div>
+      </div>
+      <div class="copyright">تم تصميم وبرمجة هذا الموقع من طرف (HBI)</div>
+    </footer>
+
+    <div class="waiting">
+      <div class="container">
+        <div class="vertical-line"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="message">يتم تحميل الموقع، انتظر رجاءً</div>
+    </div>
+
+    <noscript>
+      <img src="logo.svg" style="width: 120px;" alt="Logo" title="Logo">
+      <div class="noscript-title">
+        This's Website Will NOT Working Without <span>JavaScript</span>
+      </div>
+      <div class="noscript-description">
+        This's Website Needs to JavaScript, It breathing, Walking, Playing, Sitting, Standing, Thinking, Everything, By JavaScript.
+      </div>
+    </noscript>
+    
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/BigInteger.min.js"></script>
+    <script src="JS/index.min.js"></script>
+  </body>
+</html>

@@ -1,6 +1,5 @@
 let projects = [],
-    getItems = (projects) => {
-        let lang = localStorage.getItem("lang");
+    getItems = (projects, lang = localStorage.getItem("lang")) => {
         $(".body .main").html("");
         for (let project of projects) {
             $(".body .main").append(`
@@ -24,9 +23,9 @@ let projects = [],
                 $(".body .main .grid .item .buttons .link").text("رابط الموقع");
             break;}
 
-            case "en": {
+            default: {
                 $(".body .main .grid .item .buttons .link").text("Link");
-            break;}
+            }
         }
     }
     switchLang = (lang, index = 0) => {
@@ -38,19 +37,19 @@ let projects = [],
                 $("footer .copyright").text("تم تصميم وبرمجة هذا الموقع من قبل (HBI)");
             break;}
 
-            case "en": {
+            default: {
                 $("body").attr("dir", "ltr");
                 $("header .themes .container .themes-button").text("Theme");
                 $("header .langs .container .langs-button").text("Lang")
                 $("footer .copyright").text("This's Website Designed & Developed By HBI");
-            break;}
+            }
         }
 
         for (let i = 0; i < $(".body .select-bar .option").length; i++) {
             $(".body .select-bar .option").eq(i).text(projects[i][lang]);
         }
 
-        getItems(projects[index].items);
+        getItems(projects[index].items, lang);
     };
 
 $(window).on("load", () => {
@@ -117,10 +116,10 @@ $(window).on("load", () => {
                     $(".body .main .grid .item .name").text("لا يوجد مشاريع بعد");
                 break;}
                 
-                case "en": {
+                default: {
                     $(".body .main .grid .item .cover .description").text("There's no Projects Now, Comeback Later");
                     $(".body .main .grid .item .name").text("There's no Projects Yet");
-                break;}
+                }
             }
         }
 

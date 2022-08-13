@@ -1,0 +1,58 @@
+[
+    {
+        "ar": "مشاريعي",
+        "en": "My Projects",
+        "items": [
+            {
+                "name": {
+                    "ar": "خوارزمية (Diffie-Hellman)",
+                    "en": "Diffie-Hellman Algorithm"
+                },
+                "description": {
+                    "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman).",
+                    "en": "Website for Executing Diffie-Hellman Algorithm."
+                },
+                "img": "Diffie Hellman.svg",
+                "link": "Projects/Diffie-Hellman Algorithm"
+            },
+            {
+                "name": {
+                    "ar": "حاسبة الساعات",
+                    "en": "Watches Calculator"
+                },
+                "description": {
+                    "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت.",
+                    "en": "Calculator on Date & Time."
+                },
+                "img": "Watches Calculator.svg",
+                "link": "Projects/Watches Calculator"
+            },
+            {
+                "name": {
+                    "ar": "(Chaos Field)",
+                    "en": "Diffie-Hellman Algorithm"
+                },
+                "description": {
+                    "ar": "موقع يشبه مواقع التواصل الإجتماعي غير أنه يتميز بأنه لا يحتاج إلى حساب للمشاركة فيه.",
+                    "en": "Website Similar to Social Media but It's no Needs Account for Sharing in."
+                },
+                "img": "Chaos Field.svg",
+                "link": "http://chaos-field.atwebpages.com"
+            }
+        ]
+    },
+    {
+        "ar": "شاركت فيها",
+        "en": "Contributed in",
+        "items": [
+
+        ]
+    },
+    {
+        "ar": "مشاريع أخرى",
+        "en": "Other Projects",
+        "items": [
+
+        ]
+    }
+]

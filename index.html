@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=Projects/Watches Calculator/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HBI Gallary</title>
-</head>
-<body>
-</body>
+    <link rel="shortcut icon" href="HBI Logo.svg">
+    <link rel="stylesheet" href="CSS/index.css">
+  </head>
+  <body dir="rtl">
+    <header>
+      <nav>
+        <div class="logo">
+            <img src="logo.svg" alt="Logo" title="HBI Gallery">
+        </div>
+      </nav>
+      <div class="themes">
+        <div class="container">
+            <div class="theme active" style="background-color: #272727;">
+                <img src="images/check.svg" alt="Tick Mark">
+            </div>
+            <div class="theme" style="background-color: #1E88E5;">
+                <img src="images/check.svg" alt="Tick Mark">
+            </div>
+            <div class="theme" style="background-color: #6D4C41;">
+                <img src="images/check.svg" alt="Tick Mark">
+            </div>
+            <div class="themes-button">سمات</div>
+        </div>
+      </div>
+
+      <div class="langs">
+        <div class="container">
+            <div class="lang active">AR</div>
+            <div class="lang">EN</div>
+            <div class="langs-button">اللغة</div>
+        </div>
+      </div>
+    </header>
+    <section class="body">
+      <div class="select-bar"></div>
+      <div class="main"></div>
+    </section>
+    <footer>
+      <div class="copyright">تم تصميم وبرمجة هذا الموقع من قبل (HBI)</div>
+    </footer>
+
+    <div class="waiting">
+      <div class="container">
+        <div class="square" style="transform: translate(50%, -50%);"></div>
+        <div class="square" style="transform: translate(50%, 50%); animation-delay: 0.5s;"></div>
+        <div class="square" style="transform: translate(-50%, 50%); animation-delay: 1s;"></div>
+        <div class="square" style="transform: translate(-50%, -50%); animation-delay: 1.5s;"></div>
+        <div class="circle"></div>
+        <div class="vertical-line"></div>
+        <div class="horizontal-line"></div>
+      </div>
+    </div>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
 </html>

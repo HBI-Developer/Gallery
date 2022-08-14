@@ -62,7 +62,9 @@ $(window).on("load", () => {
     }
 
     let certainLang = $("header .langs .container .lang").filter(function () {
-        return this.innerText.toLowerCase() === localStorage.getItem("lang");
+        if (localStorage.getItem("lang").indexOf(this.innerText.toLowerCase()) > -1) {
+            return this.innerText.toLowerCase();
+        }
     });
 
     certainLang.addClass("active").siblings().removeClass("active");
@@ -77,13 +79,15 @@ $(window).on("load", () => {
         certainTheme.addClass("active").siblings().removeClass("active");
     }
 
+    let lang = (localStorage.getItem("lang").indexOf("ar") > -1) ? "ar" : "en";
+
     $.getJSON("items.json", (items) => {
         let firstProjects = -1;
 
         for (let i = 0; i < items.length; i++) {
             if (items[i].items.length > 0) {
                 $(".body .select-bar").append(`
-                    <div class="option">${items[i].ar}</div>
+                    <div class="option">${items[i][lang]}</div>
                 `);
 
                 projects.push(items[i]);
@@ -110,7 +114,7 @@ $(window).on("load", () => {
                 </div>
             `);
 
-            switch (localStorage.getItem("lang")) {
+            switch (lang) {
                 case "ar": {
                     $(".body .main .grid .item .cover .description").text("ليس هناك مشاريع في الوقت الحالي، عد لاحقاً.");
                     $(".body .main .grid .item .name").text("لا يوجد مشاريع بعد");
@@ -123,7 +127,7 @@ $(window).on("load", () => {
             }
         }
 
-        switchLang(localStorage.getItem("lang"));
+        switchLang(lang);
     });
 
     if (document.readyState === "complete") {
@@ -201,7 +205,9 @@ $(() => {
             $(this).siblings(".active").addClass("left").removeClass("active");
         }
 
-        await getItems(projects[$(this).index()].items);
+        let lang = (localStorage.getItem("lang").indexOf("ar") > -1) ? "ar" : "en";
+
+        await getItems(projects[$(this).index()].items, lang);
 
         setTimeout(() => {
             $(".body .select-bar .option").removeClass("left right");

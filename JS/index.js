@@ -152,7 +152,7 @@ $(() => {
         $("body").css("--main-color", $(this).css("background-color"));
     });
     
-    $("body").on("click", "header .langs .container .lang", async function () {
+    $("body").on("click", "header .langs .container .lang", function () {
         $("footer").after(`
         <div class="waiting" style='display: none'>
             <div class="container">
@@ -167,20 +167,20 @@ $(() => {
         </div>
         `);
 
-        $(".waiting").fadeIn();
+        $(".waiting").fadeIn(400, async () => {
+            let lang = $(this).text().toLowerCase();
+            localStorage.setItem("lang", lang);
+            $(this).addClass("active").siblings().removeClass("active");
 
-        let lang = $(this).text().toLowerCase();
-        localStorage.setItem("lang", lang);
-        $(this).addClass("active").siblings().removeClass("active");
+            await switchLang(lang);
 
-        await switchLang(lang);
-
-        $(".waiting").fadeOut(400, function () {
-            $(this).remove();
+            $(".waiting").fadeOut(400, function () {
+                $(this).remove();
+            });
         });
     });
 
-    $("body").on("click", ".body .select-bar .option:not(.active)", async function () {
+    $("body").on("click", ".body .select-bar .option:not(.active)", function () {
         $(".body").append(`
         <div class="waiting" style='display: none'>
             <div class="container">
@@ -195,26 +195,26 @@ $(() => {
         </div>
         `);
 
-        $(".waiting").fadeIn();
-
-        if ($(this).index() > $(".body .select-bar .option.active").index()) {
-            $(this).addClass("active left");
-            $(this).siblings(".active").addClass("right").removeClass("active");
-        } else {
-            $(this).addClass("active right");
-            $(this).siblings(".active").addClass("left").removeClass("active");
-        }
-
-        let lang = (localStorage.getItem("lang").indexOf("ar") > -1) ? "ar" : "en";
-
-        await getItems(projects[$(this).index()].items, lang);
-
-        setTimeout(() => {
-            $(".body .select-bar .option").removeClass("left right");
-        }, 200);
-
-        $(".waiting").fadeOut(400, function () {
-            $(this).remove();
+        $(".waiting").fadeIn(400, async () => {
+            if ($(this).index() > $(".body .select-bar .option.active").index()) {
+                $(this).addClass("active left");
+                $(this).siblings(".active").addClass("right").removeClass("active");
+            } else {
+                $(this).addClass("active right");
+                $(this).siblings(".active").addClass("left").removeClass("active");
+            }
+    
+            let lang = (localStorage.getItem("lang").indexOf("ar") > -1) ? "ar" : "en";
+    
+            await getItems(projects[$(this).index()].items, lang);
+    
+            setTimeout(() => {
+                $(".body .select-bar .option").removeClass("left right");
+            }, 200);
+    
+            $(".waiting").fadeOut(400, function () {
+                $(this).remove();
+            });
         });
     });
 });

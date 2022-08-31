@@ -128,13 +128,13 @@ $(window).on("load", () => {
         }
 
         switchLang(lang);
-    });
 
-    if (document.readyState === "complete") {
-        $(".waiting").fadeOut(400, function () {
-            $(this).remove();
-        });
-    }
+        setTimeout(() => {
+            $(".waiting").fadeOut(400, function () {
+                $(this).remove();
+            });
+        }, 0);
+    });
 });
 
 $(() => {

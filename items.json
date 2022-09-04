@@ -30,7 +30,7 @@
             {
                 "name": {
                     "ar": "(Chaos Field)",
-                    "en": "Diffie-Hellman Algorithm"
+                    "en": "Chaos Field"
                 },
                 "description": {
                     "ar": "موقع يشبه مواقع التواصل الإجتماعي غير أنه يتميز بأنه لا يحتاج إلى حساب للمشاركة فيه.",
@@ -38,6 +38,18 @@
                 },
                 "img": "Chaos Field.svg",
                 "link": "http://chaos-field.atwebpages.com"
+            },
+            {
+                "name": {
+                    "ar": "نظام عرض النتائج",
+                    "en": "ٌResults System"
+                },
+                "description": {
+                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب.",
+                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students."
+                },
+                "img": "Results System.svg",
+                "link": "Projects/Results System"
             }
         ]
     },

@@ -1,0 +1,141 @@
+[
+    {
+        "ar": "مشاريعي",
+        "en": "My Projects",
+        "items": [
+            {
+                "name": {
+                    "ar": "خوارزمية (Diffie-Hellman)",
+                    "en": "Diffie-Hellman Algorithm"
+                },
+                "description": {
+                    "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman).",
+                    "en": "Website for Executing Diffie-Hellman Algorithm."
+                },
+                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+                "img": "Diffie Hellman.svg",
+                "link": "Projects/Diffie-Hellman Algorithm"
+            },
+            {
+                "name": {
+                    "ar": "حاسبة الساعات",
+                    "en": "Watches Calculator"
+                },
+                "description": {
+                    "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت.",
+                    "en": "Calculator on Date & Time."
+                },
+                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+                "img": "Watches Calculator.svg",
+                "link": "Projects/Watches Calculator"
+            },
+            {
+                "name": {
+                    "ar": "(Chaos Field)",
+                    "en": "Chaos Field"
+                },
+                "description": {
+                    "ar": "موقع يشبه مواقع التواصل الإجتماعي غير أنه يتميز بأنه لا يحتاج إلى حساب للمشاركة فيه.",
+                    "en": "Website Similar to Social Media but It's no Needs Account for Sharing in."
+                },
+                "tools":  ["HTML5", "CSS3", "JavaScript", "VueJS", "PHP", "MySQL"],
+                "img": "Chaos Field.svg",
+                "link": "http://chaos-field.atwebpages.com"
+            },
+            {
+                "name": {
+                    "ar": "نظام عرض النتائج",
+                    "en": "ٌResults System"
+                },
+                "description": {
+                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب.",
+                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students."
+                },
+                "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "SASS"],
+                "img": "Results System.svg",
+                "link": "Projects/Results System"
+            },
+            {
+                "name": {
+                    "ar": "حاسبة الساعات (React)",
+                    "en": "Watches Calculator with React"
+                },
+                "description": {
+                    "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت، تم تصميم هذه النسخة باستخدام (React).",
+                    "en": "Calculator on Date & Time, That's version is maded by React."
+                },
+                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery", "React"],
+                "img": "Watches Calculator.svg",
+                "images-link": {
+                    "general-src": "images/Projects/React Watches Calculator/",
+                    "info": [
+                        {
+                            "img": "homepage-ar.jpg",
+                            "ar": "الصفحة الرئيسية باللغة العربية.",
+                            "en": "Arabic Homepage."
+                        },
+                        {
+                            "img": "homepage-en.jpg",
+                            "ar": "الصفحة الرئيسية باللغة الإنجليزية.",
+                            "en": "English Homepage."
+                        },
+                        {
+                            "img": "homepage-mobile-ar.jpg",
+                            "ar": "الصفحة الرئيسية على الهاتف باللغة العربية.",
+                            "en": "Arabic Homepage on Mobile."
+                        },
+                        {
+                            "img": "homepage-mobile-en.jpg",
+                            "ar": "الصفحة الرئيسية على الهاتف باللغة الإنجليزية.",
+                            "en": "English Homepage on Mobile."
+                        },
+                        {
+                            "img": "main-loading-screen.gif",
+                            "ar": "نافذة التحميل الرئيسية على الموقع.",
+                            "en": "Main Loading Screen on a Website."
+                        },
+                        {
+                            "img": "result-loading-screen-ar.gif",
+                            "ar": "نافذة التحميل لصفحة عرض النتيجة باللغة العربية.",
+                            "en": "Arabic Result Page Loading Screen."
+                        },
+                        {
+                            "img": "result-loading-screen-en.gif",
+                            "ar": "نافذة التحميل لصفحة عرض النتيجة باللغة الإنجليزية.",
+                            "en": "English Result Page Loading Screen."
+                        },
+                        {
+                            "img": "result-ar.jpg",
+                            "ar": "صفحة النتيجة باللغة العربية.",
+                            "en": "Arabic Result Page."
+                        },
+                        {
+                            "img": "result-en.jpg",
+                            "ar": "صفحة النتيجة باللغة الإنجليزية.",
+                            "en": "English Result Page."
+                        },
+                        {
+                            "img": "main-structure.jpg",
+                            "ar": "بنية المشروع.",
+                            "en": "Project Structure."
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "ar": "شاركت فيها",
+        "en": "Contributed in",
+        "items": [
+
+        ]
+    },
+    {
+        "ar": "مشاريع أخرى",
+        "en": "Other Projects",
+        "items": [
+
+        ]
+    }
+]

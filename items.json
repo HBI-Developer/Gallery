@@ -14,7 +14,7 @@
                 },
                 "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
                 "img": "Diffie Hellman.svg",
-                "link": "Projects/Diffie-Hellman Algorithm"
+                "link": "Projects/diffie-hellman-algorithm"
             },
             {
                 "name": {
@@ -27,7 +27,7 @@
                 },
                 "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
                 "img": "Watches Calculator.svg",
-                "link": "Projects/Watches Calculator"
+                "link": "Projects/watches-calculator"
             },
             {
                 "name": {
@@ -53,7 +53,7 @@
                 },
                 "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "SASS"],
                 "img": "Results System.svg",
-                "link": "Projects/Results System"
+                "link": "Projects/results-system"
             },
             {
                 "name": {
@@ -67,7 +67,7 @@
                 "tools": ["HTML5", "CSS3", "JavaScript", "jQuery", "React"],
                 "img": "Watches Calculator.svg",
                 "images-link": {
-                    "general-src": "images/Projects/React Watches Calculator/",
+                    "general-src": "images/Projects/react-watches-calculator/",
                     "info": [
                         {
                             "img": "homepage-ar.jpg",

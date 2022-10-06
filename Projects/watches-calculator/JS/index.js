@@ -591,6 +591,19 @@ $(() => {
     }
   );
 
+  $("body").on("keydown", "input[type='number']", ev => {
+    let accept = ["NumLock", "Home", "End", "Shift", "Control", "Shift", "Backspace", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Alt", "Tab"];
+    if (isNaN(parseInt(ev.key)) && accept.indexOf(ev.key) === -1) {
+      ev.preventDefault();
+    }
+  });
+
+  $("body").on("blur", "input[type='number']", function () {
+    if ($(this).val().trim() === "") {
+      $(this).val(0)
+    }
+  });
+
   $("body").on("submit", ".calc .watch form", (e) => {
     e.preventDefault();
   });

@@ -128,7 +128,7 @@
                     "en": "ٌResults System with React"
                 },
                 "description": {
-                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تم تصميمه بواسطة (React).",
+                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تمت برمجته بواسطة (React).",
                     "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students, Developed by React."
                 },
                 "tools":[["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["React"], ["Redux", "Redux Toolkit"]],

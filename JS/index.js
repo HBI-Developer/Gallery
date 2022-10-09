@@ -1,6 +1,6 @@
 let projects = [],
     getItems = (projects, lang = localStorage.getItem("lang")) => {
-        let index = 0;
+        let index = projects.length - 1;
         $(".body .main").html("");
         for (let pr = projects.length - 1; pr >= 0; pr--) {
             let project = projects[pr],
@@ -48,7 +48,7 @@ let projects = [],
                         </div>
                     </div>
                 `);
-                index++;
+                index--;
             });
         }
 

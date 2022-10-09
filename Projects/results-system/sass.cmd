@@ -1,1 +1,0 @@
-sass "C:/Users/howar/Desktop/Project/HBI Gallery/Projects/Results System/CSS/":"C:/Users/howar/Desktop/Project/HBI Gallery/Projects/Results System/CSS/" --style=compressed --watch

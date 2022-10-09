@@ -1,6 +1,5 @@
 let projects = [],
     getItems = (projects, lang = localStorage.getItem("lang")) => {
-        let index = projects.length - 1;
         $(".body .main").html("");
         for (let pr = projects.length - 1; pr >= 0; pr--) {
             let project = projects[pr],
@@ -27,7 +26,7 @@ let projects = [],
                     linkButton = `<a href="${(project.link !== "") ? project.link : "#"}" target="_blank" class="link"></a>`;
                 } else if (project['images-link']) {
                     linkButton = `
-                        <div class='image-button' data-index="${index}">
+                        <div class='image-button' data-index="${pr}">
                             <span></span>
                             <span class='icon' style: ></span>
                         </div>
@@ -48,7 +47,6 @@ let projects = [],
                         </div>
                     </div>
                 `);
-                index--;
             });
         }
 

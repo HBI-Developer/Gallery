@@ -9,7 +9,7 @@ let projects = [],
                 if (project.tools.length > 0) {
                     tools += `<div class='made-container'><ul class='made-by'>`;
                     for (let i = 0; i < project.tools.length; i++) {
-                        tools += `<li title="${project.tools[i]}" style="background-image: url('images/langs&techs/${project.tools[i]}.svg')"></li>`;
+                        tools += `<li style="--title: '${project.tools[i][1] ?? project.tools[i][0]}'; background-image: url('images/langs&techs/${project.tools[i][0]}.svg')"></li>`;
 
                         if (i === project.tools.length - 1) {
                             tools += `</ul></div>`;

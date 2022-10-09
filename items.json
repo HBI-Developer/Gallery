@@ -12,7 +12,7 @@
                     "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman).",
                     "en": "Website for Executing Diffie-Hellman Algorithm."
                 },
-                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"]],
                 "img": "Diffie Hellman.svg",
                 "link": "Projects/diffie-hellman-algorithm"
             },
@@ -25,7 +25,7 @@
                     "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت.",
                     "en": "Calculator on Date & Time."
                 },
-                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery"],
+                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"]],
                 "img": "Watches Calculator.svg",
                 "link": "Projects/watches-calculator"
             },
@@ -38,7 +38,7 @@
                     "ar": "موقع يشبه مواقع التواصل الإجتماعي غير أنه يتميز بأنه لا يحتاج إلى حساب للمشاركة فيه.",
                     "en": "Website Similar to Social Media but It's no Needs Account for Sharing in."
                 },
-                "tools":  ["HTML5", "CSS3", "JavaScript", "VueJS", "PHP", "MySQL"],
+                "tools":  [["HTML5"], ["CSS3"], ["JavaScript"], ["VueJS"], ["PHP"], ["MySQL"]],
                 "img": "Chaos Field.svg",
                 "link": "http://chaos-field.atwebpages.com"
             },
@@ -51,7 +51,7 @@
                     "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب.",
                     "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students."
                 },
-                "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "SASS"],
+                "tools":[["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["SASS"]],
                 "img": "Results System.svg",
                 "link": "Projects/results-system"
             },
@@ -64,7 +64,7 @@
                     "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت، تم تصميم هذه النسخة باستخدام (React).",
                     "en": "Calculator on Date & Time, That's version is maded by React."
                 },
-                "tools": ["HTML5", "CSS3", "JavaScript", "jQuery", "React"],
+                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["React"]],
                 "img": "Watches Calculator.svg",
                 "images-link": {
                     "general-src": "images/Projects/react-watches-calculator/",
@@ -121,6 +121,19 @@
                         }
                     ]
                 }
+            },
+            {
+                "name": {
+                    "ar": "نظام عرض النتائج (React)",
+                    "en": "ٌResults System with React"
+                },
+                "description": {
+                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تم تصميمه بواسطة (React).",
+                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students, Developed by React."
+                },
+                "tools":[["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["React"], ["Redux", "Redux Toolkit"]],
+                "img": "Results System.svg",
+                "link": "https://hbi-developer.github.io/react-results-system/#/"
             }
         ]
     },

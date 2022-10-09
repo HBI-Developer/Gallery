@@ -2,8 +2,9 @@ let projects = [],
     getItems = (projects, lang = localStorage.getItem("lang")) => {
         let index = 0;
         $(".body .main").html("");
-        for (let project of projects) {
-            let tools = ``;
+        for (let pr = projects.length - 1; pr >= 0; pr--) {
+            let project = projects[pr],
+                tools = ``;
 
             new Promise(t => {
                 if (project.tools.length > 0) {

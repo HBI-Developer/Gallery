@@ -1,0 +1,17 @@
+{
+    "direction": "ltr",
+    "items": {
+        "title": "HBI Gallery",
+        "preferences": "Preferences",
+        "themes": "Themes",
+        "default_mode": "Default Mode",
+        "dark_mode": "Dark Mode",
+        "milk_chocolate_mode": "Milk Chocolate",
+        "dark_cyan_mode": "Dark Cyan",
+        "moderate_magenta_mode": "Moderate Magenta",
+        "languages": "Languages",
+        "ar_lang": "Arabic",
+        "en_lang": "English",
+        "footer": "This Website is Designed & Developed by HBI Developer"
+    }
+}

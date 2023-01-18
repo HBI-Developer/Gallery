@@ -1,0 +1,253 @@
+/************************************** Variables *************************************/
+
+$boxScale: 1.03;
+
+$waitSize: 35px;
+
+$smallScreen: 870px;
+
+/**************************************************************************************/
+
+/*************************************** Styles ***************************************/
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    min-height: 60vh;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:first-child {
+        margin-top: 15px;
+    }
+
+    .box {
+        background-color: var(--third-color);
+        box-shadow: 1px 1px 0px rgb(173 173 173 / 14%);
+        transition: .2s all ease-in-out;
+        padding-bottom: 10px;
+        animation: .2s box-scale ease-in-out;
+        z-index: 2;
+
+        > * {
+            transition: .2s all ease-in-out;
+
+            &:not(.img) {
+                padding: 5px 10px;
+            }
+        }
+
+        .img {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            filter: blur(1px);
+            margin-bottom: 10px;
+            transition: .2s all ease-in-out;
+            background: {
+                size: cover;
+                position: center;
+                repeat: no-repeat;
+            }
+
+            .cover {
+                width: 100%;
+                height: 100%;
+                background-color: #27272798;
+                padding: 5px 10px;
+                transform: translateY(-100%);
+                transition: {
+                    duration: .2s;
+                    property: all;
+                    timing-function: ease-in-out;
+                    delay: .2s;
+                };
+                
+                .description {
+                    color: #eee;
+                    text-align: justify;
+                }
+            }
+
+        }
+
+        .name {
+            position: relative;
+            text-align: justify;
+            color: var(--main-text-color);
+            font: {
+                size: 14px;
+                weight: bold;
+            }
+        }
+
+        .technologies {
+            display: flex;
+            column-gap: 5px;
+            row-gap: 5px;
+            flex-wrap: wrap;
+            
+            .technology {
+                height: 17px;
+                width: 17px;
+                position: relative;
+                background: {
+                    size: contain;
+                    position: center;
+                    repeat: no-repeat;
+                }
+
+                .title-container {
+                    position: absolute;
+                    top: 120%;
+                    left: 50%;
+                    overflow: hidden;
+                    transform: translateX(-50%);
+
+                    .title {
+                        padding: 2px 5px;
+                        background-color: #272727;
+                        color: #eee;
+                        width: max-content;
+                        transform: translateY(-110%);
+                        border-radius: .15rem;
+                        transition: .2s all ease-in-out;
+
+                        font: {
+                            size: 10px;
+                            weight: bold;
+                        }
+    
+                        span {
+                            color: #584379;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .title-container .title {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            flex: {
+                direction: column;
+            }
+
+            .button {
+                padding: 5px 0;
+                text-decoration: none;
+                text-align: center;
+                color: var(--third-text-color);
+                display: grid;
+                column-gap: 5px;
+                grid-template-columns: max-content max-content;
+                background-color: var(--main-color);
+                border-radius: 0.15rem;
+                transition: .2s all ease-in-out;
+                justify-content: center;
+                align-items: center;
+
+                &.no-icon {
+                    padding: 9.5px 0;
+                }
+
+                .icon {
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: {
+                        size: contain;
+                        position: center;
+                        repeat: no-repeat;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: inset 0 0 50px #00000023;
+                }
+
+                &:active {
+                    box-shadow: inset 0 0 50px #00000098;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale($boxScale);
+            
+            .img {
+                filter: blur(0);
+                
+                .cover {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .wait {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff45;
+        display: none;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 99;
+
+        &::after {
+            content: "";
+            width: $waitSize;
+            height: $waitSize;
+            border-radius: 50%;
+            display: flex;
+            animation: 0.5s rotation linear infinite;
+            align-items: center;
+            justify-content: center;
+            background: conic-gradient(var(--main-color) 320deg, transparent 320deg);
+            -webkit-mask: radial-gradient(farthest-side, transparent 80%, #fff 80%);
+            mask: radial-gradient(farthest-side, transparent 80%, #fff 80%);
+        }
+    }
+
+    @media (max-width: $smallScreen) {
+        & {
+            grid-template-columns: 80%;
+            justify-content: center;
+        }
+    }
+}
+
+
+/**************************************************************************************/
+
+/************************************* Animations *************************************/
+
+@keyframes box-scale {
+    from {transform: scale($boxScale);}
+    to {transform: scale(1);}
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/**************************************************************************************/

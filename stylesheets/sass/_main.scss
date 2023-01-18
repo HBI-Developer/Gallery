@@ -1,0 +1,14 @@
+@use "main/selection-bar";
+
+@use "main/boxes";
+
+@use "main/pagination";
+
+main {
+    padding: 10px 0;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

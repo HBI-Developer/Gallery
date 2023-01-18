@@ -1,0 +1,14 @@
+@mixin media($screen) {
+
+    $mobileSize: 870px;
+
+    @if $screen == 'mobile' {
+        @media (max-width: $mobileSize) {
+            @content;
+        }
+    } @else if $screen == 'computer' {
+        @media (min-width: ($mobileSize + 1)) {
+            @content;
+        }
+    }
+}

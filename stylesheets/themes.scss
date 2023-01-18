@@ -1,0 +1,30 @@
+$themes: (
+    'default' #272727 #efefef #fff #fff #181818 #272727 #eee #272727,
+    'dark' #272727 #383838 #181818 #181818 #eee #fff #eee #eee,
+    'milk-chocolate' #84563C #efefef #fff #fff #181818 #84563C #eee #84563C,
+    'dark-cyan' #009688 #efefef #fff #fff #181818 #009688 #eee #009688,
+    'moderate-magenta' #AB47BC #efefef #fff #fff #181818 #AB47BC #eee #AB47BC,
+);
+
+body {
+
+    @each $name, $main, $second, $third, $pagination, $text, $text2, $text3, $paginationText in $themes {
+
+        $class: '';
+
+        @if ($name != 'default') {
+            $class: '.' + $name;
+        }
+
+        &#{$class} {
+            --main-color: #{$main};
+            --second-color: #{$second};
+            --third-color: #{$third};
+            --pagination-color: #{$pagination};
+            --main-text-color: #{$text};
+            --second-text-color: #{$text2};
+            --third-text-color: #{$text3};
+            --pagination-text-color: #{$paginationText};
+        }
+    }
+}

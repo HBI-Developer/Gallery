@@ -1,0 +1,27 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: monospace;
+    transition: .2s background-color ease-in-out, .2s color ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: var(--second-color);
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+}
+
+.partition {
+    width: 95%!important;
+    padding: 0!important;
+    border: 0!important;
+    margin: 5px auto!important;
+    background: #ccc!important;
+    height: 1px!important;
+}

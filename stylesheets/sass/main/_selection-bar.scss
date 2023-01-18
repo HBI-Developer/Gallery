@@ -1,0 +1,55 @@
+.selection-bar {
+    background-color: var(--third-color);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    column-gap: 5px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    font: {
+        size: 14px;
+        weight: bold;
+    }
+
+    .option {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        color: var(--second-text-color);
+        opacity: 0.4;
+        padding-bottom: 3px;
+        margin-bottom: 5px;
+        transition: .2s all ease-in-out;
+
+        &::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            top: 110%;
+            height: 2px;
+            left: 0;
+            background-color: var(--second-text-color);
+            transform: scaleX(0);
+            transition: inherit;
+        }
+
+        &:hover,
+        &.active {
+            &:not(.active) {
+                opacity: 0.8;
+            }
+
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+
+        &.active {
+            cursor: auto;
+            opacity: 1;
+        }
+    }
+}

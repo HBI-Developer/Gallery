@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    .page {
+        padding: 5px 10px;
+        color: var(--pagination-text-color);
+        background-color: var(--pagination-color);
+        cursor: pointer;
+        font-size: 12px;
+        transition: .2s all ease-in-out;
+
+        &:hover,
+        &.active {
+            background-color: var(--pagination-text-color);
+            color: var(--pagination-color);
+
+        }
+
+        &:hover:not(.active) {
+            filter: brightness(150%);
+        }
+
+        &.active {
+            cursor: auto;
+        }
+    }
+}

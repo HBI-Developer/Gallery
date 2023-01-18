@@ -1,0 +1,72 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    .rubik-cube {
+        $properties: (
+            #1E88E5 translate3d(0%, -50%, 0) rotateY(90deg),
+            #66BB6A translate3d(-100%, -50%, 0) rotateY(-90deg),
+            #FFEB3B translate3d(-50%, 0%, 0) rotateX(90deg),
+            #E0E0E0 translate3d(-50%, -100%, 0) rotateX(-90deg),
+            #FF9800 translate3d(-50%, -50%, -50px) rotateX(0),
+            #E53935 translate3d(-50%, -50%, 50px) rotateX(0)
+        );
+
+        $counter: 1;
+        $size: 400px;
+        position: relative;
+        width: $size;
+        height: $size;
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            perspective: 400px;
+            transform: scale(0.5);
+
+            .cube-sides {
+                position:relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                animation: 1s rotation linear infinite;
+
+                .cube-side {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    
+                    @each $color, $transform, $rotate in $properties {
+                        &:nth-child(#{$counter}) {
+                            transform: $transform $rotate;
+                            background-color: $color;
+                        }
+
+                        $counter: $counter + 1;
+                    }
+                }        
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {transform: rotateX(-45deg) rotateY(0) rotateZ(0);}
+    50% {transform: rotateX(-45deg) rotateY(180deg) rotateZ(180deg);}
+    100% {transform: rotateX(-45deg) rotateY(360deg) rotateZ(360deg);}
+}

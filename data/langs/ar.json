@@ -1,0 +1,17 @@
+{
+    "direction": "rtl",
+    "items": {
+        "title": "معرض (HBI)",
+        "preferences": "التفضيلات",
+        "themes": "السمات",
+        "default_mode": "الوضع الإفتراضي",
+        "dark_mode": "الوضع الليلي",
+        "milk_chocolate_mode": "شوكولاتة خفيفة",
+        "dark_cyan_mode": "سماوي غامق",
+        "moderate_magenta_mode": "أرجواني هادئ",
+        "languages": "اللغات",
+        "ar_lang": "العربية",
+        "en_lang": "الإنجليزية",
+        "footer": "تم تصميم وبرمجة هذا الموقع بواسطة (HBI Developer)"
+    }
+}

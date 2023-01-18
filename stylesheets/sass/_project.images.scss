@@ -1,6 +1,6 @@
 @use './helpers/mixins' as *;
 
-.cover {
+body > .cover {
     position: fixed;
     top: 0;
     left: 0;

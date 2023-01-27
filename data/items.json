@@ -256,6 +256,42 @@
                         }
                     }
                 ]
+            },
+            {
+                "name": {
+                    "ar": "حاسبة الوقت",
+                    "en": "ٌTime Calculator"
+                },
+                "description": {
+                    "ar": "هو الإصدار الثاني من حاسبة الساعات، بتصميم جديد عن طريق (Bootstrap) كي يكون أكثر جمال وأكثر تجاوباً مع الشاشات الصغيرة",
+                    "en": "This's the second version of the Watches Calculator, with a new design by (Bootstrap) to be more beautiful and more responsive with small screens."
+                },
+                "tools":[["Pug"], ["SASS"], ["Bootstrap"], ["TypeScript"], ["jQuery"], ["Gulp", "Gulp.js"]],
+                "img": "Time Calculator.svg",
+                "buttons": [
+                    {
+                        "icon": "github",
+                        "img": "",
+                        "link": "https://github.com/HBI-Developer/time-calculator-v2/tree/master",
+                        "background": "#24292F",
+                        "color": "#eee",
+                        "name": {
+                            "ar": "رابط (Github)",
+                            "en": "Github link"
+                        }
+                    },
+                    {
+                        "icon": "",
+                        "img": "",
+                        "link": "https://hbi-developer.github.io/time-calculator-v2/",
+                        "background": "",
+                        "color": "",
+                        "name": {
+                            "ar": "رابط الموقع",
+                            "en": "Website link"
+                        }
+                    }
+                ]
             }
         ]
     },

@@ -138,6 +138,7 @@ $smallScreen: 870px;
         .buttons {
             width: 100%;
             display: flex;
+            row-gap: 5px;
             flex: {
                 direction: column;
             }

@@ -1,15 +1,3 @@
-
-/*
-    @CONST themes is the list of supported themes in website
-    @CONST defaultTheme is the default theme in themes list
-    @CONST langs is the list of supported languages in website
-    @CONST defaultLang is the default language in languages list
-    @CONST numberOfBox number of projects in each page
-    @CONST pageInPaginationTemplate template of pages in pagination element
-    @CONST selectionBarTemplate template of selection bar
-    @CONST selectionBarOptionTemplate template of options in selection bar element
-*/
-
 const themes = [
                 {
                     "name": "default",
@@ -41,8 +29,6 @@ const themes = [
 
     numberOfBox = 10,
 
-    //Templetes
-
     pageInPaginationTemplate = `
         <div class="page"></div>
     `,
@@ -52,11 +38,6 @@ const themes = [
     selectionBarOptionTemplate = `
         <div class="option">Option</div>
     `;
-
-/*
-    @variable lastPage will contains number of last page in active category of projects
-    @variable images will contains info of projects images for projects has images for it
-*/
 
 let lastPage = 0,
     images = [];

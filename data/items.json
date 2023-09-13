@@ -1,312 +1,197 @@
 [
-    {
-        "ar": "مشاريعي",
-        "en": "My Projects",
-        "items": [
-            {
-                "name": {
-                    "ar": "خوارزمية (Diffie-Hellman)",
-                    "en": "Diffie-Hellman Algorithm"
-                },
-                "description": {
-                    "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman).",
-                    "en": "Website for Executing Diffie-Hellman Algorithm."
-                },
-                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"]],
-                "img": "Diffie Hellman.svg",
-                "buttons": [
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "https://hbi-developer.github.io/diffie-hellman-algorithm/",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "حاسبة الساعات",
-                    "en": "Watches Calculator"
-                },
-                "description": {
-                    "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت.",
-                    "en": "Calculator on Date & Time."
-                },
-                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"]],
-                "img": "Watches Calculator.svg",
-                "buttons": [
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "https://hbi-developer.github.io/time-calculator/",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "(Chaos Field)",
-                    "en": "Chaos Field"
-                },
-                "description": {
-                    "ar": "موقع يشبه مواقع التواصل الإجتماعي غير أنه يتميز بأنه لا يحتاج إلى حساب للمشاركة فيه.",
-                    "en": "Website Similar to Social Media but It's no Needs Account for Sharing in."
-                },
-                "tools":  [["HTML5"], ["CSS3"], ["JavaScript"], ["VueJS"], ["PHP"], ["MySQL"]],
-                "img": "Chaos Field.svg",
-                "buttons": [
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "http://chaos-field.atwebpages.com",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "نظام عرض النتائج",
-                    "en": "ٌResults System"
-                },
-                "description": {
-                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب.",
-                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students."
-                },
-                "tools":[["HTML5"], ["CSS3"], ["SASS"], ["JavaScript"], ["jQuery"]],
-                "img": "Results System.svg",
-                "buttons": [
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "https://hbi-developer.github.io/result-system/",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "حاسبة الساعات (React)",
-                    "en": "Watches Calculator with React"
-                },
-                "description": {
-                    "ar": "آلة حاسبة تطبق العمليات على الزمن والوقت، تم تصميم هذه النسخة باستخدام (React).",
-                    "en": "Calculator on Date & Time, That's version is maded by React."
-                },
-                "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["React"]],
-                "img": "Watches Calculator.svg",
-                "buttons": [
-                    {
-                        "icon": "images",
-                        "img": "",
-                        "background": "#43A047",
-                        "color": "",
-                        "name": {
-                            "ar": "صور المشروع",
-                            "en": "Projects Images"
-                        },
-                        "images-link": {
-                            "general-src": "images/Projects/Images Projects/react-watches-calculator/",
-                            "info": [
-                                {
-                                    "img": "homepage-ar.jpg",
-                                    "ar": "الصفحة الرئيسية باللغة العربية.",
-                                    "en": "Arabic Homepage."
-                                },
-                                {
-                                    "img": "homepage-en.jpg",
-                                    "ar": "الصفحة الرئيسية باللغة الإنجليزية.",
-                                    "en": "English Homepage."
-                                },
-                                {
-                                    "img": "homepage-mobile-ar.jpg",
-                                    "ar": "الصفحة الرئيسية على الهاتف باللغة العربية.",
-                                    "en": "Arabic Homepage on Mobile."
-                                },
-                                {
-                                    "img": "homepage-mobile-en.jpg",
-                                    "ar": "الصفحة الرئيسية على الهاتف باللغة الإنجليزية.",
-                                    "en": "English Homepage on Mobile."
-                                },
-                                {
-                                    "img": "main-loading-screen.gif",
-                                    "ar": "نافذة التحميل الرئيسية على الموقع.",
-                                    "en": "Main Loading Screen on a Website."
-                                },
-                                {
-                                    "img": "result-loading-screen-ar.gif",
-                                    "ar": "نافذة التحميل لصفحة عرض النتيجة باللغة العربية.",
-                                    "en": "Arabic Result Page Loading Screen."
-                                },
-                                {
-                                    "img": "result-loading-screen-en.gif",
-                                    "ar": "نافذة التحميل لصفحة عرض النتيجة باللغة الإنجليزية.",
-                                    "en": "English Result Page Loading Screen."
-                                },
-                                {
-                                    "img": "result-ar.jpg",
-                                    "ar": "صفحة النتيجة باللغة العربية.",
-                                    "en": "Arabic Result Page."
-                                },
-                                {
-                                    "img": "result-en.jpg",
-                                    "ar": "صفحة النتيجة باللغة الإنجليزية.",
-                                    "en": "English Result Page."
-                                },
-                                {
-                                    "img": "main-structure.jpg",
-                                    "ar": "بنية المشروع.",
-                                    "en": "Project Structure."
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "نظام عرض النتائج (React)",
-                    "en": "ٌResults System with React"
-                },
-                "description": {
-                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تمت برمجته بواسطة (React).",
-                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students, Developed by React."
-                },
-                "tools":[["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["React"], ["Redux", "Redux Toolkit"]],
-                "img": "Results System.svg",
-                "buttons": [
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "https://hbi-developer.github.io/react-results-system/#/",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "نظام عرض النتائج (Laravel)",
-                    "en": "ٌResults System with Laravel"
-                },
-                "description": {
-                    "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تمت برمجته بواسطة (Laravel).",
-                    "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students, Developed by Laravel."
-                },
-                "tools":[["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"], ["PHP"], ["Laravel"], ["MySQL"]],
-                "img": "Results System.svg",
-                "buttons": [
-                    {
-                        "icon": "github",
-                        "img": "",
-                        "link": "https://github.com/HBI-Developer/laravel-result-system",
-                        "background": "#24292F",
-                        "color": "#eee",
-                        "name": {
-                            "ar": "رابط (Github)",
-                            "en": "Github link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "معرض (HBI Developer)",
-                    "en": "ٌHBI Developer Gallary"
-                },
-                "description": {
-                    "ar": "هو هذا المعرض الحالي الذي فيه المشاريع والذي هو معرضي الخاص.",
-                    "en": "This's current Gallery that contains many projects and my own Gallary."
-                },
-                "tools":[["HTML5"], ["CSS3"], ["SASS"], ["JavaScript"], ["jQuery"]],
-                "img": "HBI Gallery.svg",
-                "buttons": [
-                    {
-                        "icon": "github",
-                        "img": "",
-                        "link": "https://github.com/HBI-Developer/Gallery",
-                        "background": "#24292F",
-                        "color": "#eee",
-                        "name": {
-                            "ar": "رابط (Github)",
-                            "en": "Github link"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": {
-                    "ar": "حاسبة الوقت",
-                    "en": "ٌTime Calculator"
-                },
-                "description": {
-                    "ar": "هو الإصدار الثاني من حاسبة الساعات، بتصميم جديد عن طريق (Bootstrap) كي يكون أكثر جمال وأكثر تجاوباً مع الشاشات الصغيرة",
-                    "en": "This's the second version of the Watches Calculator, with a new design by (Bootstrap) to be more beautiful and more responsive with small screens."
-                },
-                "tools":[["Pug"], ["SASS"], ["Bootstrap"], ["TypeScript"], ["jQuery"], ["Gulp", "Gulp.js"]],
-                "img": "Time Calculator.svg",
-                "buttons": [
-                    {
-                        "icon": "github",
-                        "img": "",
-                        "link": "https://github.com/HBI-Developer/time-calculator-v2/tree/master",
-                        "background": "#24292F",
-                        "color": "#eee",
-                        "name": {
-                            "ar": "رابط (Github)",
-                            "en": "Github link"
-                        }
-                    },
-                    {
-                        "icon": "",
-                        "img": "",
-                        "link": "https://hbi-developer.github.io/time-calculator-v2/",
-                        "background": "",
-                        "color": "",
-                        "name": {
-                            "ar": "رابط الموقع",
-                            "en": "Website link"
-                        }
-                    }
-                ]
+  {
+    "ar": "مشاريعي",
+    "en": "My Projects",
+    "items": [
+      {
+        "name": {
+          "ar": "خوارزمية (Diffie-Hellman)",
+          "en": "Diffie-Hellman Algorithm"
+        },
+        "description": {
+          "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman).",
+          "en": "Website for Executing Diffie-Hellman Algorithm."
+        },
+        "tools": [["HTML5"], ["CSS3"], ["JavaScript"], ["jQuery"]],
+        "img": "Diffie Hellman.svg",
+        "buttons": [
+          {
+            "icon": "github",
+            "img": "",
+            "link": "https://github.com/HBI-Developer/diffie-hellman-algorithm",
+            "background": "#24292F",
+            "color": "#eee",
+            "name": {
+              "ar": "رابط (Github)",
+              "en": "Github link"
             }
+          },
+          {
+            "icon": "",
+            "img": "",
+            "link": "https://hbi-developer.github.io/diffie-hellman-algorithm/",
+            "background": "",
+            "color": "",
+            "name": {
+              "ar": "رابط الموقع",
+              "en": "Website link"
+            }
+          }
         ]
-    },
-    {
-        "ar": "شاركت فيها",
-        "en": "Contributed in",
-        "items": [
-
+      },
+      {
+        "name": {
+          "ar": "نظام عرض النتائج (Laravel)",
+          "en": "ٌResults System with Laravel"
+        },
+        "description": {
+          "ar": "نظام لإضافة وتعديل وحذف وعرض نتائج طلاب المدارس الثانوية لمسؤول النظام وعرضها للطلاب, تمت برمجته بواسطة (Laravel).",
+          "en": "System for Add, Edit, Delete, Show for High Schools Students Results to Admin, And Show Results to Students, Developed by Laravel."
+        },
+        "tools": [
+          ["HTML5"],
+          ["CSS3"],
+          ["JavaScript"],
+          ["jQuery"],
+          ["PHP"],
+          ["Laravel"],
+          ["MySQL"]
+        ],
+        "img": "Results System.svg",
+        "buttons": [
+          {
+            "icon": "github",
+            "img": "",
+            "link": "https://github.com/HBI-Developer/laravel-result-system",
+            "background": "#24292F",
+            "color": "#eee",
+            "name": {
+              "ar": "رابط (Github)",
+              "en": "Github link"
+            }
+          }
         ]
-    },
-    {
-        "ar": "مشاريع أخرى",
-        "en": "Other Projects",
-        "items": [
-
+      },
+      {
+        "name": {
+          "ar": "معرض (HBI Developer)",
+          "en": "ٌHBI Developer Gallary"
+        },
+        "description": {
+          "ar": "هو هذا المعرض الحالي الذي فيه المشاريع والذي هو معرضي الخاص.",
+          "en": "This's current Gallery that contains many projects and my own Gallary."
+        },
+        "tools": [["HTML5"], ["CSS3"], ["SASS"], ["JavaScript"], ["jQuery"]],
+        "img": "HBI Gallery.svg",
+        "buttons": [
+          {
+            "icon": "github",
+            "img": "",
+            "link": "https://github.com/HBI-Developer/Gallery",
+            "background": "#24292F",
+            "color": "#eee",
+            "name": {
+              "ar": "رابط (Github)",
+              "en": "Github link"
+            }
+          }
         ]
-    }
+      },
+      {
+        "name": {
+          "ar": "حاسبة الوقت",
+          "en": "ٌTime Calculator"
+        },
+        "description": {
+          "ar": "هو الإصدار الثاني من حاسبة الساعات، بتصميم جديد عن طريق (Bootstrap) كي يكون أكثر جمال وأكثر تجاوباً مع الشاشات الصغيرة",
+          "en": "This's the second version of the Watches Calculator, with a new design by (Bootstrap) to be more beautiful and more responsive with small screens."
+        },
+        "tools": [
+          ["Pug"],
+          ["SASS"],
+          ["Bootstrap"],
+          ["TypeScript"],
+          ["jQuery"],
+          ["Gulp", "Gulp.js"]
+        ],
+        "img": "Time Calculator.svg",
+        "buttons": [
+          {
+            "icon": "github",
+            "img": "",
+            "link": "https://github.com/HBI-Developer/time-calculator-v2/tree/master",
+            "background": "#24292F",
+            "color": "#eee",
+            "name": {
+              "ar": "رابط (Github)",
+              "en": "Github link"
+            }
+          },
+          {
+            "icon": "",
+            "img": "",
+            "link": "https://hbi-developer.github.io/time-calculator-v2/",
+            "background": "",
+            "color": "",
+            "name": {
+              "ar": "رابط الموقع",
+              "en": "Website link"
+            }
+          }
+        ]
+      },
+      {
+        "name": {
+          "ar": "خوارزمية (Diffie-Hellman)",
+          "en": "Diffie-Hellman Algorithm"
+        },
+        "description": {
+          "ar": "موقع يقوم بتطبيق فكرة خوارزمية (Diffie-Hellman)، ملاحظة مهمة وهي أن هذا الموقع يطبق الفكرة على نافذتي متصفح، لذا رجاءً أفتحه في نافذتين.",
+          "en": "Website for Executing Diffie-Hellman Algorithm. Important note: Should be open this website in two browser tabs to work."
+        },
+        "tools": [
+          ["HTML5"],
+          ["CSS3"],
+          ["Skeleton"],
+          ["JavaScript"],
+          ["jQuery"]
+        ],
+        "img": "Diffie Hellman 2.svg",
+        "buttons": [
+          {
+            "icon": "github",
+            "img": "",
+            "link": "https://github.com/HBI-Developer/diffie-hellman-algorithm-2",
+            "background": "#24292F",
+            "color": "#eee",
+            "name": {
+              "ar": "رابط (Github)",
+              "en": "Github link"
+            }
+          },
+          {
+            "icon": "",
+            "img": "",
+            "link": "https://hbi-developer.github.io/diffie-hellman-algorithm-2/",
+            "background": "",
+            "color": "",
+            "name": {
+              "ar": "رابط الموقع",
+              "en": "Website link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ar": "شاركت فيها",
+    "en": "Contributed in",
+    "items": []
+  },
+  {
+    "ar": "مشاريع أخرى",
+    "en": "Other Projects",
+    "items": []
+  }
 ]
